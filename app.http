@@ -1,0 +1,36 @@
+GET http://localhost:3000/books/ 
+
+###
+
+GET http://localhost:3000/books/1/ 
+
+###
+
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+    "title": "Wings Of Fire",
+    "authorId": 143,
+    "rating": 5.0,
+    "ratingCount": 10,
+    "reviewCount": 500,
+    "description": "Success of Abdul Kalam",
+    "pages": 1000,
+    "dateOfPublication": "June 10th 2015",
+    "editionLanguage": "English",
+    "price": 3000,
+    "onlineStores": "Google, Amazon, Pocket FM"
+}
+
+###
+DELETE http://localhost:3000/books/50/
+
+###
+
+GET http://localhost:3000/authors/1/books/
+
+###
+
+GET http://localhost:3000/authors/1/books/41/
+###
